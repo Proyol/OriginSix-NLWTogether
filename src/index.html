@@ -18,6 +18,10 @@
         <!--Estilos da página-->
         <link rel="stylesheet" href="styles.css">
 
+        <!--Ícones que estão na pasta assets-->
+        <!--Arquivo css que gera esses ícones, obtido através de icomoon.io/app-->
+        <link rel="stylesheet" href="assets/fonts/style.css">
+
         <!--Fontes utilizadas-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +31,23 @@
 
     <!--Conteúdos visíveis na página-->
     <body>
-        <header id="header">
+        <header id="header" class="scroll">
             <nav class="container">
                 <a class="logo" href="#">beauty<span>salon</span>.</a>
-                <div id="menu">...</div>
+
+                <!--Dropdown Menu-->
+                <div class="menu">
+                    <ul class="grid">
+                        <li><a class="title" href="#home">Início</a></li>
+                        <li><a class="title" href="#about">Sobre</a></li>
+                        <li><a class="title" href="#services">Serviços</a></li>
+                        <li><a class="title" href="#testimonials">Depoimentos</a></li>
+                        <li><a class="title" href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="toggle icon-menu"></div>
+                <div class="toggle icon-close"></div>
             </nav>
         </header>
 
@@ -43,7 +60,7 @@
                     </div>
 
                     <div class="text">
-                        <h1>Saúde natural para seus cabelos</h1>
+                        <h2 class="title">Saúde natural para seus cabelos</h2>
                         <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais</p>
                         <a href="#" class="button">Agendar um horário</a>
                     </div>
@@ -52,13 +69,73 @@
 
             <div class="divider-1"></div>
 
-            <section></section>
-            <section></section>
-            <section></section>
+            <section class="section" id="about">
+                <div class="container grid">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Modelos de cabelo">
+                    </div>
+
+                    <div class="text">
+                        <h2 class="title">Sobre nós</h2>
+
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus quo eveniet cupiditate a accusamus! Facilis laudantium aspernatur non explicabo tempora, voluptatum velit enim quis, omnis incidunt asperiores error? Necessitatibus, animi!
+                        </p>
+                        <br />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae eum quos repudiandae quaerat beatae possimus ducimus eius itaque, est reprehenderit voluptatibus cupiditate ab enim quasi exercitationem non, mollitia aut distinctio?
+                        </p>
+                        <br/>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, error quisquam enim minus cupiditate quo ea sunt eaque eveniet laboriosam doloribus quam, dolores magnam itaque, voluptas minima sed sint. Dolores.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider-2"></div>
+            
+            <section class="section" id="services">
+                <div class="container grid">
+                     <header>
+                         <h2 class="title">Serviços</h2>
+                         <p>
+                             Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais.
+                         </p>
+                     </header>
+
+                     <div class="cards grid">
+                         <div class="card">
+                             <i class="icon-woman-hair"></i>
+                             <h2 class="title">Terapia Capilar</h2>
+                             <p>
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequuntur.
+                            </p>
+                         </div>
+                         <div class="card">
+                             <i class="icon-trim"></i>
+                             <h2 class="title">Corte</h2>
+                             <p>
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequuntur.
+                            </p>
+                         </div>
+                         <div class="card">
+                             <i class="icon-cosmetic"></i>
+                             <h2 class="title">Tratamento</h2>
+                             <p>
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequuntur.
+                            </p>
+                         </div>
+                     </div>
+                </div>
+            </section>
+
         </main>
 
         <footer>
 
         </footer>
+
+        <script src="main.js"></script>
     </body>
 </html>
