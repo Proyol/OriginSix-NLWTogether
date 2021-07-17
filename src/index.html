@@ -15,6 +15,9 @@
 
         <title>OriginSix</title>
 
+        <!-- Biblioteca Swipper para o carrossel -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
         <!--Estilos da página-->
         <link rel="stylesheet" href="styles.css">
 
@@ -130,12 +133,120 @@
                 </div>
             </section>
 
+            <div class="divider-1"></div>
+
+            <section class="section" id="testimonials">
+                <div class="container">
+                    <header>
+                        <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+                    </header>
+
+                    <div class="testimonials swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial swiper-slide">
+                                <blockquote>
+                                    <!-- Escrever caracteres espeicias no html -->
+                                    <p>
+                                        <span>&ldquo;</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cum corrupti est incidunt assumenda sequi officiis laboriosam, quam nulla dignissimos error consequatur temporibus accusantium. Magni adipisci ex eos fugit eaque!
+                                    </p>
+        
+                                    <cite>
+                                        <img 
+                                            src="https://randomuser.me/api/portraits/women/38.jpg" alt="Foto de Wanessa Souza"
+                                        >
+                                        Wanessa Souza
+                                    </cite>
+                                </blockquote>
+                            </div>
+    
+                            <div class="testimonial swiper-slide">
+                                <blockquote>
+                                    <!-- Escrever caracteres espeicias no html -->
+                                    <p>
+                                        <span>&ldquo;</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cum corrupti est incidunt assumenda sequi officiis laboriosam, quam nulla dignissimos error consequatur temporibus accusantium. Magni adipisci ex eos fugit eaque!
+                                    </p>
+        
+                                    <cite>
+                                        <img 
+                                            src="https://randomuser.me/api/portraits/men/51.jpg" alt="Foto de Daniel Gustavo Favero"
+                                        >
+                                        Daniel Gustavo Favero
+                                    </cite>
+                                </blockquote>
+                            </div>
+    
+                            <div class="testimonial swiper-slide">
+                                <blockquote>
+                                    <!-- Escrever caracteres espeicias no html -->
+                                    <p>
+                                        <span>&ldquo;</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cum corrupti est incidunt assumenda sequi officiis laboriosam, quam nulla dignissimos error consequatur temporibus accusantium. Magni adipisci ex eos fugit eaque!
+                                    </p>
+        
+                                    <cite>
+                                        <img 
+                                            src="https://randomuser.me/api/portraits/men/81.jpg" alt="Foto de Gabriel Bottin"
+                                        >
+                                        Gabriel Bottin
+                                    </cite>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider-2"></div>
+
+            <section class="section" id="contact">
+                <div class="container grid">
+                    <div class="text">
+                        <h2 class="title">Entre em contato com a gente!</h2>
+                        <p>
+                            Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas  e sugestões
+                        </p>
+                        <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=Olá, gostaria de agendar um horário" class="button" target="_blank">
+                            <i class="icon-whatsapp"></i>
+                            Entrar em contato
+                        </a>
+                    </div>
+
+                    <div class="links">
+                        <ul class="grid">
+                            <li>
+                                <i class="icon-phone"></i>
+                                11 99845-6754
+                            </li>
+                            <li>
+                                <i class="icon-map-pin"></i>
+                                R. Amauri Souza, 346
+                            </li>
+                            <li>
+                                <i class="icon-mail"></i>
+                                contato@beautysalon.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>
 
         </footer>
 
-        <script src="main.js"></script>
+        <!-- Script do Swipper para o carrossel -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Carrossel -->
+        <script src="scripts/carroussel.js"></script>
+
+        <!-- Scroll Reveal Script-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="scripts/scroll.js"></script>
+
+        <!-- Menu Dropdown -->
+        <script src="scripts/dropdown.js"></script>
     </body>
 </html>
