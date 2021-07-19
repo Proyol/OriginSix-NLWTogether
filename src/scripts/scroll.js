@@ -10,5 +10,6 @@ scrollReview.reveal(`
     #about .image, #about .text,
     #services header, #services .card,
     #testimonials header, #testimonials .testimonials,
-    #contact .text, #contact .links
+    #contact .text, #contact .links,
+    footer .brand, footer .logo, footer .social
 `, {interval: 100})

@@ -26,7 +26,7 @@ ul{
     /* rem = root element. É uma unidade relativa ao viewport do dispositivo */
     --header-height: 4.5rem;
   
-    /* Cores */
+    /* HUE de Cores */
     --hue: 159;
 
     /* Cores HSL */
@@ -63,7 +63,7 @@ body {
 }
 
 .title {
-    font: 700 1.875rem "Poppins", sans-serif;
+    font: 700 var(--title-font-size) "Poppins", sans-serif;
 
     color: var(--title-color);
 
@@ -275,6 +275,10 @@ nav.show div.icon-close{
 
 .logo span {
     color: var(--base-color)
+}
+
+.logo-alt span {
+    color: var(--body-color);
 }
 
 main {
@@ -502,4 +506,50 @@ main {
 
 #contact ul li i {
     color: var(--base-color);
+}
+
+/* FOOTER */
+footer {
+    background: var(--base-color);   
+}
+
+footer .brand .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+footer .social {
+    display: flex;
+    gap: 2rem;
+}
+
+footer .social a{
+    transition: 0.3s;
+}
+
+footer .social a:hover{
+    transform: translateY(-8px);
+}
+
+/* MEDIA QUERIES - RESPONSIVIDADE */
+/*
+    Extra Large Devices: maior que 1200px
+    Large Devices: maior que 1023px ou maior que 992
+    Medium Devices: maior que 767px
+*/
+
+@media (min-width: 992px) {
+    :root {
+        --title-font-size: 2.2rem;
+    }
 }
